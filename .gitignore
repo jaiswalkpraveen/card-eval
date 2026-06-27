@@ -1,0 +1,19 @@
+# secrets — NEVER commit
+.env
+
+# python
+.venv/
+__pycache__/
+*.pyc
+
+# node / playwright
+node_modules/
+playwright-report/
+test-results/
+.playwright/
+
+# eval run outputs (keep baseline.json, ignore timestamped runs)
+results/run-*.json
+
+# os
+.DS_Store
