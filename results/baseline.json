@@ -1,0 +1,163 @@
+{
+  "generated_at": "2026-06-27T22:40:07",
+  "mode": "mock",
+  "average_overall": 4.25,
+  "results": [
+    {
+      "id": "birthday-coworker",
+      "prompt": "A birthday card for a coworker, warm but professional.",
+      "card": "Wishing you a wonderful birthday! To a coworker who means so much \u2014 your kindness and effort never go unnoticed. May this birthday bring you joy and warm memories.",
+      "scores": {
+        "prompt_fidelity": 4,
+        "text_accuracy": 5,
+        "style_consistency": 4,
+        "aesthetic": 4,
+        "reasoning": "Mock score: on-occasion, correct tone, ideal card length."
+      },
+      "overall": 4.25
+    },
+    {
+      "id": "anniversary-spouse",
+      "prompt": "A wedding anniversary card for my wife, romantic and heartfelt.",
+      "card": "Wishing you a wonderful anniversary! To a spouse who means so much \u2014 your kindness and effort never go unnoticed. May this anniversary bring you joy and warm memories.",
+      "scores": {
+        "prompt_fidelity": 4,
+        "text_accuracy": 5,
+        "style_consistency": 4,
+        "aesthetic": 4,
+        "reasoning": "Mock score: on-occasion, correct tone, ideal card length."
+      },
+      "overall": 4.25
+    },
+    {
+      "id": "graduation-friend",
+      "prompt": "A graduation card for a close friend, celebratory and proud.",
+      "card": "Wishing you a wonderful graduation! To a friend who means so much \u2014 your kindness and effort never go unnoticed. May this graduation bring you joy and warm memories.",
+      "scores": {
+        "prompt_fidelity": 4,
+        "text_accuracy": 5,
+        "style_consistency": 4,
+        "aesthetic": 4,
+        "reasoning": "Mock score: on-occasion, correct tone, ideal card length."
+      },
+      "overall": 4.25
+    },
+    {
+      "id": "getwell-grandparent",
+      "prompt": "A get-well-soon card for my grandmother, gentle and caring.",
+      "card": "Wishing you a wonderful get well! To a grandparent who means so much \u2014 your kindness and effort never go unnoticed. May this get well bring you joy and warm memories.",
+      "scores": {
+        "prompt_fidelity": 4,
+        "text_accuracy": 5,
+        "style_consistency": 4,
+        "aesthetic": 4,
+        "reasoning": "Mock score: on-occasion, correct tone, ideal card length."
+      },
+      "overall": 4.25
+    },
+    {
+      "id": "newbaby-colleague",
+      "prompt": "A new baby congratulations card for a colleague, cheerful and kind.",
+      "card": "Wishing you a wonderful new baby! To a colleague who means so much \u2014 your kindness and effort never go unnoticed. May this new baby bring you joy and warm memories.",
+      "scores": {
+        "prompt_fidelity": 4,
+        "text_accuracy": 5,
+        "style_consistency": 4,
+        "aesthetic": 4,
+        "reasoning": "Mock score: on-occasion, correct tone, ideal card length."
+      },
+      "overall": 4.25
+    },
+    {
+      "id": "thankyou-mentor",
+      "prompt": "A thank-you card for a mentor, sincere and appreciative.",
+      "card": "Wishing you a wonderful thank you! To a mentor who means so much \u2014 your kindness and effort never go unnoticed. May this thank you bring you joy and warm memories.",
+      "scores": {
+        "prompt_fidelity": 4,
+        "text_accuracy": 5,
+        "style_consistency": 4,
+        "aesthetic": 4,
+        "reasoning": "Mock score: on-occasion, correct tone, ideal card length."
+      },
+      "overall": 4.25
+    },
+    {
+      "id": "newjob-friend",
+      "prompt": "A congratulations card for a friend starting a new job, upbeat and encouraging.",
+      "card": "Wishing you a wonderful new job! To a friend who means so much \u2014 your kindness and effort never go unnoticed. May this new job bring you joy and warm memories.",
+      "scores": {
+        "prompt_fidelity": 4,
+        "text_accuracy": 5,
+        "style_consistency": 4,
+        "aesthetic": 4,
+        "reasoning": "Mock score: on-occasion, correct tone, ideal card length."
+      },
+      "overall": 4.25
+    },
+    {
+      "id": "sympathy-coworker",
+      "prompt": "A sympathy card for a coworker who lost a family member, compassionate and respectful.",
+      "card": "Wishing you a wonderful sympathy! To a coworker who means so much \u2014 your kindness and effort never go unnoticed. May this sympathy bring you joy and warm memories.",
+      "scores": {
+        "prompt_fidelity": 4,
+        "text_accuracy": 5,
+        "style_consistency": 4,
+        "aesthetic": 4,
+        "reasoning": "Mock score: on-occasion, correct tone, ideal card length."
+      },
+      "overall": 4.25
+    },
+    {
+      "id": "holiday-team",
+      "prompt": "A holiday season card for my team, festive and inclusive.",
+      "card": "Wishing you a wonderful holiday! To a team who means so much \u2014 your kindness and effort never go unnoticed. May this holiday bring you joy and warm memories.",
+      "scores": {
+        "prompt_fidelity": 4,
+        "text_accuracy": 5,
+        "style_consistency": 4,
+        "aesthetic": 4,
+        "reasoning": "Mock score: on-occasion, correct tone, ideal card length."
+      },
+      "overall": 4.25
+    },
+    {
+      "id": "retirement-boss",
+      "prompt": "A retirement card for my boss, respectful and warm.",
+      "card": "Wishing you a wonderful retirement! To a boss who means so much \u2014 your kindness and effort never go unnoticed. May this retirement bring you joy and warm memories.",
+      "scores": {
+        "prompt_fidelity": 4,
+        "text_accuracy": 5,
+        "style_consistency": 4,
+        "aesthetic": 4,
+        "reasoning": "Mock score: on-occasion, correct tone, ideal card length."
+      },
+      "overall": 4.25
+    },
+    {
+      "id": "valentine-partner",
+      "prompt": "A Valentine's Day card for my partner, affectionate and playful.",
+      "card": "Wishing you a wonderful valentine! To a partner who means so much \u2014 your kindness and effort never go unnoticed. May this valentine bring you joy and warm memories.",
+      "scores": {
+        "prompt_fidelity": 4,
+        "text_accuracy": 5,
+        "style_consistency": 4,
+        "aesthetic": 4,
+        "reasoning": "Mock score: on-occasion, correct tone, ideal card length."
+      },
+      "overall": 4.25
+    },
+    {
+      "id": "congrats-engagement",
+      "prompt": "An engagement congratulations card for friends, joyful and warm.",
+      "card": "Wishing you a wonderful engagement! To a friends who means so much \u2014 your kindness and effort never go unnoticed. May this engagement bring you joy and warm memories.",
+      "scores": {
+        "prompt_fidelity": 4,
+        "text_accuracy": 5,
+        "style_consistency": 4,
+        "aesthetic": 4,
+        "reasoning": "Mock score: on-occasion, correct tone, ideal card length."
+      },
+      "overall": 4.25
+    }
+  ]
+}

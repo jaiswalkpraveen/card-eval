@@ -1,0 +1,112 @@
+{
+  "prompts": [
+    {
+      "id": "birthday-coworker",
+      "prompt": "A birthday card for a coworker, warm but professional.",
+      "expect": {
+        "occasion": "birthday",
+        "recipient": "coworker",
+        "tone": "warm, professional"
+      }
+    },
+    {
+      "id": "anniversary-spouse",
+      "prompt": "A wedding anniversary card for my wife, romantic and heartfelt.",
+      "expect": {
+        "occasion": "anniversary",
+        "recipient": "spouse",
+        "tone": "romantic, heartfelt"
+      }
+    },
+    {
+      "id": "graduation-friend",
+      "prompt": "A graduation card for a close friend, celebratory and proud.",
+      "expect": {
+        "occasion": "graduation",
+        "recipient": "friend",
+        "tone": "celebratory, proud"
+      }
+    },
+    {
+      "id": "getwell-grandparent",
+      "prompt": "A get-well-soon card for my grandmother, gentle and caring.",
+      "expect": {
+        "occasion": "get well",
+        "recipient": "grandparent",
+        "tone": "gentle, caring"
+      }
+    },
+    {
+      "id": "newbaby-colleague",
+      "prompt": "A new baby congratulations card for a colleague, cheerful and kind.",
+      "expect": {
+        "occasion": "new baby",
+        "recipient": "colleague",
+        "tone": "cheerful, kind"
+      }
+    },
+    {
+      "id": "thankyou-mentor",
+      "prompt": "A thank-you card for a mentor, sincere and appreciative.",
+      "expect": {
+        "occasion": "thank you",
+        "recipient": "mentor",
+        "tone": "sincere, appreciative"
+      }
+    },
+    {
+      "id": "newjob-friend",
+      "prompt": "A congratulations card for a friend starting a new job, upbeat and encouraging.",
+      "expect": {
+        "occasion": "new job",
+        "recipient": "friend",
+        "tone": "upbeat, encouraging"
+      }
+    },
+    {
+      "id": "sympathy-coworker",
+      "prompt": "A sympathy card for a coworker who lost a family member, compassionate and respectful.",
+      "expect": {
+        "occasion": "sympathy",
+        "recipient": "coworker",
+        "tone": "compassionate, respectful"
+      }
+    },
+    {
+      "id": "holiday-team",
+      "prompt": "A holiday season card for my team, festive and inclusive.",
+      "expect": {
+        "occasion": "holiday",
+        "recipient": "team",
+        "tone": "festive, inclusive"
+      }
+    },
+    {
+      "id": "retirement-boss",
+      "prompt": "A retirement card for my boss, respectful and warm.",
+      "expect": {
+        "occasion": "retirement",
+        "recipient": "boss",
+        "tone": "respectful, warm"
+      }
+    },
+    {
+      "id": "valentine-partner",
+      "prompt": "A Valentine's Day card for my partner, affectionate and playful.",
+      "expect": {
+        "occasion": "valentine",
+        "recipient": "partner",
+        "tone": "affectionate, playful"
+      }
+    },
+    {
+      "id": "congrats-engagement",
+      "prompt": "An engagement congratulations card for friends, joyful and warm.",
+      "expect": {
+        "occasion": "engagement",
+        "recipient": "friends",
+        "tone": "joyful, warm"
+      }
+    }
+  ]
+}
