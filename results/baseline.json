@@ -1,163 +1,163 @@
 {
-  "generated_at": "2026-06-27T22:40:07",
-  "mode": "mock",
-  "average_overall": 4.25,
+  "generated_at": "2026-06-28T00:20:58",
+  "mode": "real",
+  "average_overall": 5.0,
   "results": [
     {
       "id": "birthday-coworker",
       "prompt": "A birthday card for a coworker, warm but professional.",
-      "card": "Wishing you a wonderful birthday! To a coworker who means so much \u2014 your kindness and effort never go unnoticed. May this birthday bring you joy and warm memories.",
+      "card": "Wishing you a very happy birthday! It is a true pleasure working alongside you, and I hope you have a wonderful day of celebration. May the coming year bring you continued success and happiness both in and out of the office.",
       "scores": {
-        "prompt_fidelity": 4,
+        "prompt_fidelity": 5,
         "text_accuracy": 5,
-        "style_consistency": 4,
-        "aesthetic": 4,
-        "reasoning": "Mock score: on-occasion, correct tone, ideal card length."
+        "style_consistency": 5,
+        "aesthetic": 5,
+        "reasoning": "The card perfectly matches the warm and professional tone requested, is grammatically flawless, consistent, and has the ideal length for a greeting card."
       },
-      "overall": 4.25
+      "overall": 5.0
     },
     {
       "id": "anniversary-spouse",
       "prompt": "A wedding anniversary card for my wife, romantic and heartfelt.",
-      "card": "Wishing you a wonderful anniversary! To a spouse who means so much \u2014 your kindness and effort never go unnoticed. May this anniversary bring you joy and warm memories.",
+      "card": "Happy anniversary to my beautiful wife, the love of my life and my greatest adventure. Loving you is the easiest, most rewarding thing I have ever done, and my heart only grows fuller with every year we spend together. Thank you for filling my world with endless warmth, laughter, and a love that will always feel like home.",
       "scores": {
-        "prompt_fidelity": 4,
+        "prompt_fidelity": 5,
         "text_accuracy": 5,
-        "style_consistency": 4,
-        "aesthetic": 4,
-        "reasoning": "Mock score: on-occasion, correct tone, ideal card length."
+        "style_consistency": 5,
+        "aesthetic": 5,
+        "reasoning": "Perfectly captures the requested romantic and heartfelt tone for a wife's anniversary card in a beautifully written, three-sentence format."
       },
-      "overall": 4.25
+      "overall": 5.0
     },
     {
       "id": "graduation-friend",
       "prompt": "A graduation card for a close friend, celebratory and proud.",
-      "card": "Wishing you a wonderful graduation! To a friend who means so much \u2014 your kindness and effort never go unnoticed. May this graduation bring you joy and warm memories.",
+      "card": "I am incredibly proud of you for reaching this milestone and crushing every challenge along the way. You\u2019ve worked so hard for this moment, and there is no doubt your future is going to be absolutely brilliant. Cheers to your graduation, my friend\u2014let\u2019s celebrate!",
       "scores": {
-        "prompt_fidelity": 4,
+        "prompt_fidelity": 5,
         "text_accuracy": 5,
-        "style_consistency": 4,
-        "aesthetic": 4,
-        "reasoning": "Mock score: on-occasion, correct tone, ideal card length."
+        "style_consistency": 5,
+        "aesthetic": 5,
+        "reasoning": "Perfect graduation card for a friend, capturing a proud and celebratory tone in a concise, well-written format."
       },
-      "overall": 4.25
+      "overall": 5.0
     },
     {
       "id": "getwell-grandparent",
       "prompt": "A get-well-soon card for my grandmother, gentle and caring.",
-      "card": "Wishing you a wonderful get well! To a grandparent who means so much \u2014 your kindness and effort never go unnoticed. May this get well bring you joy and warm memories.",
+      "card": "Dearest Grandma, sending you all my love and warmest hugs as you rest and recover. Please take all the time you need to heal, and know that you are in my thoughts every single day. Wishing you a gentle, steady return to strength, and looking forward to spending quiet time together soon.",
       "scores": {
-        "prompt_fidelity": 4,
+        "prompt_fidelity": 5,
         "text_accuracy": 5,
-        "style_consistency": 4,
-        "aesthetic": 4,
-        "reasoning": "Mock score: on-occasion, correct tone, ideal card length."
+        "style_consistency": 5,
+        "aesthetic": 5,
+        "reasoning": "Perfectly captures the gentle and caring tone for Grandma, with flawless execution and ideal card length."
       },
-      "overall": 4.25
+      "overall": 5.0
     },
     {
       "id": "newbaby-colleague",
       "prompt": "A new baby congratulations card for a colleague, cheerful and kind.",
-      "card": "Wishing you a wonderful new baby! To a colleague who means so much \u2014 your kindness and effort never go unnoticed. May this new baby bring you joy and warm memories.",
+      "card": "Huge congratulations on the arrival of your beautiful new baby! Wishing your family endless love, happiness, and plenty of sweet snuggles during this exciting time. We are all so incredibly happy for you and are sending our warmest wishes as you begin this wonderful new chapter!",
       "scores": {
-        "prompt_fidelity": 4,
+        "prompt_fidelity": 5,
         "text_accuracy": 5,
-        "style_consistency": 4,
-        "aesthetic": 4,
-        "reasoning": "Mock score: on-occasion, correct tone, ideal card length."
+        "style_consistency": 5,
+        "aesthetic": 5,
+        "reasoning": "Perfect fit for a colleague with a warm, cheerful, and kind tone, immaculate grammar, and ideal card length."
       },
-      "overall": 4.25
+      "overall": 5.0
     },
     {
       "id": "thankyou-mentor",
       "prompt": "A thank-you card for a mentor, sincere and appreciative.",
-      "card": "Wishing you a wonderful thank you! To a mentor who means so much \u2014 your kindness and effort never go unnoticed. May this thank you bring you joy and warm memories.",
+      "card": "I want to express my deepest gratitude for your guidance and the wisdom you have so generously shared with me. Your belief in my potential has given me the confidence to take on new challenges and grow both personally and professionally. Thank you for being such an inspiring mentor and an invaluable source of support.",
       "scores": {
-        "prompt_fidelity": 4,
+        "prompt_fidelity": 5,
         "text_accuracy": 5,
-        "style_consistency": 4,
-        "aesthetic": 4,
-        "reasoning": "Mock score: on-occasion, correct tone, ideal card length."
+        "style_consistency": 5,
+        "aesthetic": 5,
+        "reasoning": "Perfectly captures the sincere and appreciative tone for a mentor, with flawless grammar and ideal greeting-card length."
       },
-      "overall": 4.25
+      "overall": 5.0
     },
     {
       "id": "newjob-friend",
       "prompt": "A congratulations card for a friend starting a new job, upbeat and encouraging.",
-      "card": "Wishing you a wonderful new job! To a friend who means so much \u2014 your kindness and effort never go unnoticed. May this new job bring you joy and warm memories.",
+      "card": "I am so incredibly thrilled for you as you step into this exciting new role! They are so lucky to have your talents, drive, and amazing energy on their team. Wishing you the absolute best on your first day and this next chapter\u2014I know you\u2019re going to absolutely crush it!",
       "scores": {
-        "prompt_fidelity": 4,
+        "prompt_fidelity": 5,
         "text_accuracy": 5,
-        "style_consistency": 4,
-        "aesthetic": 4,
-        "reasoning": "Mock score: on-occasion, correct tone, ideal card length."
+        "style_consistency": 5,
+        "aesthetic": 5,
+        "reasoning": "Perfect upbeat and encouraging tone for a friend starting a new job, with flawless grammar and ideal card length."
       },
-      "overall": 4.25
+      "overall": 5.0
     },
     {
       "id": "sympathy-coworker",
       "prompt": "A sympathy card for a coworker who lost a family member, compassionate and respectful.",
-      "card": "Wishing you a wonderful sympathy! To a coworker who means so much \u2014 your kindness and effort never go unnoticed. May this sympathy bring you joy and warm memories.",
+      "card": "I was deeply saddened to hear about the loss of your loved one. Please know that our entire team is keeping you and your family in our thoughts during this difficult time. We are here to support you in any way we can, so please take all the time you need.",
       "scores": {
-        "prompt_fidelity": 4,
+        "prompt_fidelity": 5,
         "text_accuracy": 5,
-        "style_consistency": 4,
-        "aesthetic": 4,
-        "reasoning": "Mock score: on-occasion, correct tone, ideal card length."
+        "style_consistency": 5,
+        "aesthetic": 5,
+        "reasoning": "Perfectly matches the requested compassionate and respectful tone for a coworker, with flawless grammar and ideal length for a team sympathy card."
       },
-      "overall": 4.25
+      "overall": 5.0
     },
     {
       "id": "holiday-team",
       "prompt": "A holiday season card for my team, festive and inclusive.",
-      "card": "Wishing you a wonderful holiday! To a team who means so much \u2014 your kindness and effort never go unnoticed. May this holiday bring you joy and warm memories.",
+      "card": "Warmest wishes to our wonderful team for a joyful and restful holiday season. Thank you for your hard work, dedication, and the incredible energy you\u2019ve brought to everything we accomplished this year. May the festive break bring you and your loved ones peace, happiness, and well-deserved rest as we look forward to a bright new year together.",
       "scores": {
-        "prompt_fidelity": 4,
+        "prompt_fidelity": 5,
         "text_accuracy": 5,
-        "style_consistency": 4,
-        "aesthetic": 4,
-        "reasoning": "Mock score: on-occasion, correct tone, ideal card length."
+        "style_consistency": 5,
+        "aesthetic": 5,
+        "reasoning": "The card perfectly captures a festive, warm, and inclusive holiday message for a team, maintaining excellent grammar and an ideal length."
       },
-      "overall": 4.25
+      "overall": 5.0
     },
     {
       "id": "retirement-boss",
       "prompt": "A retirement card for my boss, respectful and warm.",
-      "card": "Wishing you a wonderful retirement! To a boss who means so much \u2014 your kindness and effort never go unnoticed. May this retirement bring you joy and warm memories.",
+      "card": "Thank you for your exceptional leadership, guidance, and dedication over the years. Your mentorship has left a lasting impact on our team, and your presence in the office will be deeply missed. Wishing you a wonderful, well-deserved retirement filled with health, happiness, and relaxation.",
       "scores": {
-        "prompt_fidelity": 4,
+        "prompt_fidelity": 5,
         "text_accuracy": 5,
-        "style_consistency": 4,
-        "aesthetic": 4,
-        "reasoning": "Mock score: on-occasion, correct tone, ideal card length."
+        "style_consistency": 5,
+        "aesthetic": 5,
+        "reasoning": "Perfectly captures the warm and respectful tone for a retiring boss, with flawless grammar and ideal card length."
       },
-      "overall": 4.25
+      "overall": 5.0
     },
     {
       "id": "valentine-partner",
       "prompt": "A Valentine's Day card for my partner, affectionate and playful.",
-      "card": "Wishing you a wonderful valentine! To a partner who means so much \u2014 your kindness and effort never go unnoticed. May this valentine bring you joy and warm memories.",
+      "card": "Happy Valentine\u2019s Day to my absolute favorite human! I love you more than coffee, and I\u2019m incredibly lucky to have you by my side. Thank you for being my partner in crime and always keeping life fun.",
       "scores": {
-        "prompt_fidelity": 4,
+        "prompt_fidelity": 5,
         "text_accuracy": 5,
-        "style_consistency": 4,
-        "aesthetic": 4,
-        "reasoning": "Mock score: on-occasion, correct tone, ideal card length."
+        "style_consistency": 5,
+        "aesthetic": 5,
+        "reasoning": "Perfectly captures the affectionate and playful tone for a Valentine's Day partner card with flawless execution and ideal length."
       },
-      "overall": 4.25
+      "overall": 5.0
     },
     {
       "id": "congrats-engagement",
       "prompt": "An engagement congratulations card for friends, joyful and warm.",
-      "card": "Wishing you a wonderful engagement! To a friends who means so much \u2014 your kindness and effort never go unnoticed. May this engagement bring you joy and warm memories.",
+      "card": "We are absolutely thrilled to hear the wonderful news of your engagement! You two are truly perfect for each other, and seeing your love story reach this beautiful milestone brings us so much joy. Here\u2019s to a lifetime of love, laughter, and wonderful adventures together!",
       "scores": {
-        "prompt_fidelity": 4,
+        "prompt_fidelity": 5,
         "text_accuracy": 5,
-        "style_consistency": 4,
-        "aesthetic": 4,
-        "reasoning": "Mock score: on-occasion, correct tone, ideal card length."
+        "style_consistency": 5,
+        "aesthetic": 5,
+        "reasoning": "Nails the joyful and warm tone for an engagement card, with flawless grammar and ideal length for a physical card."
       },
-      "overall": 4.25
+      "overall": 5.0
     }
   ]
 }
