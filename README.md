@@ -185,7 +185,7 @@ baseline.
 3. Go to **Actions → Real Eval Report → Run workflow**. To see deltas in the
    demo, set the `degrade` input to `auto`.
 
-The published report lives at `https://<user>.github.io/card-eval/`.
+The published report lives at `https://jaiswalkpraveen.github.io/card-eval/`.
 
 ### Seeing deltas
 
