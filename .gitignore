@@ -5,6 +5,7 @@
 .venv/
 __pycache__/
 *.pyc
+.pytest_cache/
 
 # node / playwright
 node_modules/
@@ -14,6 +15,9 @@ test-results/
 
 # eval run outputs (keep baseline.json, ignore timestamped runs)
 results/run-*.json
+
+# generated report site (built in CI, published to Pages)
+site/
 
 # os
 .DS_Store

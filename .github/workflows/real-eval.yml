@@ -1,0 +1,108 @@
+# On-demand REAL LLM evaluation + published report (GitHub Pages).
+#
+# Trigger this manually from the Actions tab ("Run workflow"). It runs the real
+# LLM (via the gateframe secret), scores every card with the LLM-as-judge,
+# compares against the committed baseline, builds an HTML report showing
+# per-prompt deltas, and publishes it to GitHub Pages.
+#
+# Why manual (workflow_dispatch) and not on every push:
+#   - real LLM calls cost money and are non-deterministic
+#   - you only want to spend that when you actually want fresh scores
+#
+# Requirements (one-time setup, see README):
+#   1. Repo Secret  GATEFRAME_API_KEY  = your gf_ key
+#   2. Repo Variable (optional) GATEFRAME_BASE_URL / MODEL_NAME to override defaults
+#   3. Settings -> Pages -> Source = "GitHub Actions"
+
+name: Real Eval Report
+
+on:
+  workflow_dispatch:
+    inputs:
+      degrade:
+        description: 'Prompt ids to deliberately weaken (demo deltas). Use "auto", a CSV list, or leave blank.'
+        required: false
+        default: ''
+      update_baseline:
+        description: 'Overwrite the committed baseline with this run (use rarely).'
+        type: boolean
+        required: false
+        default: false
+
+# Permissions needed to publish to GitHub Pages.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Only one Pages deployment at a time.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+
+    env:
+      MOCK: "0"
+      OPENAI_API_KEY: ${{ secrets.GATEFRAME_API_KEY }}
+      OPENAI_API_BASE: ${{ vars.GATEFRAME_BASE_URL || 'https://router.gateframe.ai/v1' }}
+      MODEL_NAME: ${{ vars.MODEL_NAME || 'gateframe/gpt-4.1-mini' }}
+      DEGRADE: ${{ github.event.inputs.degrade }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Fail early if the API key is missing
+        run: |
+          if [ -z "${OPENAI_API_KEY}" ]; then
+            echo "::error::GATEFRAME_API_KEY secret is not set. Add it in Settings -> Secrets -> Actions."
+            exit 1
+          fi
+
+      - name: Optionally refresh the baseline (real)
+        if: ${{ github.event.inputs.update_baseline == 'true' }}
+        run: python run_eval.py --baseline
+
+      - name: Run real evaluation
+        run: python run_eval.py
+
+      - name: Build HTML report (with per-prompt deltas)
+        run: |
+          python report.py
+          touch site/.nojekyll
+
+      - name: Regression gate (does not fail the report build)
+        run: python compare.py || echo "::warning::Regressions detected — see the published report."
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: eval
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4

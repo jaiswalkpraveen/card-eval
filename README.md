@@ -161,7 +161,45 @@ core practice for trusting any eval.
 
 ---
 
+## Continuous integration & on-demand reports
+
+Two GitHub Actions workflows:
+
+**`CI` (every push / PR)** — runs in mock mode (free, deterministic): the
+Playwright e2e + eval test, an eval run, and the regression gate. Catches broken
+code without spending a single API call.
+
+**`Real Eval Report` (on demand)** — triggered manually from the **Actions** tab.
+It runs the **real** LLM, scores every card, compares against the committed
+baseline, builds an HTML report showing **per-prompt deltas**, and publishes it
+to **GitHub Pages**. Inputs let you optionally weaken specific prompts
+(`degrade`) to demonstrate the gate catching regressions, or refresh the
+baseline.
+
+### One-time setup for the report workflow
+
+1. **Add the secret** — repo *Settings → Secrets and variables → Actions → New
+   repository secret*: name `GATEFRAME_API_KEY`, value your `gf_` key.
+   *(Optional variables: `GATEFRAME_BASE_URL`, `MODEL_NAME` to override defaults.)*
+2. **Enable Pages** — *Settings → Pages → Source = "GitHub Actions"*.
+3. Go to **Actions → Real Eval Report → Run workflow**. To see deltas in the
+   demo, set the `degrade` input to `auto`.
+
+The published report lives at `https://<user>.github.io/card-eval/`.
+
+### Seeing deltas
+
+Scores move when card quality moves. The `degrade` toggle weakens chosen prompts
+on purpose (e.g. a terse salesy line instead of a warm card); the judge then
+scores them lower and the report highlights the drop — e.g. a degraded
+`birthday-coworker` falls from **5.0 → 3.0 (Δ −2.0)**, flagged as a regression.
+This is the regression gate proving it actually works.
+
+---
+
 ## Stack
 
 Python 3.12 · LangChain (`ChatOpenAI`, structured output) · Pydantic
-(scoring schema) · Playwright + pytest (e2e) · OpenAI-compatible model gateway.
+(scoring schema) · Playwright + pytest (e2e) · GitHub Actions (mock CI +
+on-demand real eval) · GitHub Pages (published report) · OpenAI-compatible model
+gateway.
