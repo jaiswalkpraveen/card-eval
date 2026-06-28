@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Greeting Card</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f3f0ea;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    .card {
+      width: 420px;
+      min-height: 260px;
+      padding: 40px;
+      background: #ffffff;
+      border: 1px solid #e2dccd;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .card__text {
+      font-size: 20px;
+      line-height: 1.6;
+      color: #2b2b2b;
+      white-space: pre-wrap;
+    }
+    .card__text--empty {
+      color: #b00020;
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="article" aria-label="Greeting card">
+    <p id="card" class="card__text">Loading…</p>
+  </main>
+
+  <script>
+    // Read the card text from the URL query param: ?text=...
+    // Playwright drives this page by passing generated card text here,
+    // so the test renders exactly what a customer would see.
+    function renderCard() {
+      const params = new URLSearchParams(window.location.search);
+      const text = params.get("text");
+      const el = document.getElementById("card");
+
+      if (!text || text.trim() === "") {
+        el.textContent = "No card text provided";
+        el.classList.add("card__text--empty");
+        el.dataset.state = "error";
+        return;
+      }
+
+      el.textContent = text;
+      el.dataset.state = "ok";
+    }
+
+    renderCard();
+  </script>
+</body>
+</html>

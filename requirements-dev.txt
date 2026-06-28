@@ -1,0 +1,5 @@
+# Dev/test-only dependencies (kept separate from runtime requirements.txt)
+# Install with:  pip install -r requirements-dev.txt
+# Then install the browser binary:  python -m playwright install chromium
+pytest>=8.0
+pytest-playwright>=0.5
